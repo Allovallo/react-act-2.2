@@ -2,18 +2,18 @@ import PropTypes from 'prop-types'
 
 export const Event = ({ name, location, speaker, type, start, end }) => {
     <div className="event">
-        <h2 className="title"></h2>
+        <h2 className="title">{name}</h2>
         <p className="info">
             <i className="icon"></i>
-            Location
+            {location}
         </p>
         <p className="info">
             <i className="icon"></i>
-            Speaker
+            {speaker}
         </p>
         <p className="info">
             <i className="icon"></i>
-            Start Date
+            {start}
         </p>
         <p className="info">
             <i className="icon"></i>
