@@ -1,7 +1,8 @@
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 export const Event = () => {
-    <div className="event">
+    return (
+        <div className="event">
         <h2 className="title">Title</h2>
         <p className="info">
             <i className="icon"></i>
@@ -20,13 +21,14 @@ export const Event = () => {
             Duration
         </p>
     </div>
+    )
 }
 
-// Event.propTypes = {
-//     name: PropTypes.string.isRequired,
-//     location: PropTypes.string.isRequired,
-//     speaker: PropTypes.string.isRequired,
-//     type: PropTypes.string.isRequired,
-//     start: PropTypes.string.isRequired,
-//     end: PropTypes.string.isRequired,
-// }
+Event.propTypes = {
+    name: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    speaker: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    start: PropTypes.string.isRequired,
+    end: PropTypes.string.isRequired,
+}

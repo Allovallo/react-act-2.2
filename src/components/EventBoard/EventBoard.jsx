@@ -6,7 +6,7 @@ export const EventBoard = ({ events }) => {
     return (
         <div className={css.eventBoard}>
             {events.map(event => (
-                <Event key={event.name}></Event>
+                <Event key={event.name}>{event.name}</Event>
             ))}
         </div>
     );
